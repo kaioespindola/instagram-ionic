@@ -1,0 +1,76 @@
+<ion-content [fullscreen]="true">
+
+    <div class="login">
+
+      <ion-grid>
+
+        <ion-row>
+            <ion-col class="login__logo">
+                <ion-img [src]="assets.LOGO"></ion-img>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+
+                <form [formGroup]="userForm">
+                    <ion-row>
+                        <ion-col>
+                            <ion-input
+                                placeholder="Telefone, nome de usuário ou email"
+                                formControlName="username">
+                            </ion-input>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-input
+                                placeholder="Senha"
+                                formControlName="password"
+                                type="password">
+                            </ion-input>
+                        </ion-col>
+                    </ion-row>
+                </form>
+
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+                <div class="login__forgot">
+                    Esqueceu a senha?
+                </div>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col class="login__enter">
+                <ion-button
+                    color="primary"
+                    expand="block"
+                    [disabled]="!userForm.valid"
+                    (click)="goToHome()">Entrar
+                </ion-button>
+            </ion-col>
+        </ion-row>
+
+      </ion-grid>
+
+    </div>
+
+  </ion-content>
+
+  <ion-footer class="login__footer">
+
+    <ion-toolbar class="login__footer">
+        <ion-grid>
+            <ion-row>
+                <ion-col class="login__footer__register">
+                    Não tem uma conta? <span>Cadastre-se.</span>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-toolbar>
+
+  </ion-footer>

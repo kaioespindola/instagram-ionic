@@ -1,0 +1,6 @@
+{
+	"appId": "br.com.instagram",
+	"appName": "instagram-ionic",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
