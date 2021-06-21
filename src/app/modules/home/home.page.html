@@ -1,11 +1,29 @@
-<ion-header [translucent]="true">
-    <ion-toolbar>
-      <ion-title>
-        Home
-      </ion-title>
+<ion-header class="ion-no-border">
+    <ion-toolbar class="header">
+
+      <ion-img slot="start" [src]="assets.LOGO_SMALL"></ion-img>
+
+      <ion-buttons slot="end">
+
+        <ion-button color="dark">
+          <ion-icon name="add-circle-outline"></ion-icon>
+        </ion-button>
+        
+        <ion-button color="dark">
+          <ion-icon name="heart-outline"></ion-icon>
+        </ion-button>
+
+        <ion-button color="dark">
+          <ion-icon name="chatbubbles-outline"></ion-icon>
+        </ion-button>
+
+      </ion-buttons>
+
     </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-    hey
+    <div *ngFor="let item of items">
+      {{ item.user }} | {{ item.title }}
+    </div>
 </ion-content>

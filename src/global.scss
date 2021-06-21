@@ -39,3 +39,7 @@ ion-input {
         font-size: 14px;
     }
 }
+
+.tab-selected {
+    --color-selected: var(--ion-color-dark); // Or whatever you want to set it to.
+}

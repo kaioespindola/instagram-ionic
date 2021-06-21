@@ -8,6 +8,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedeModule } from './shared/shared.module';
 
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -17,7 +21,9 @@ import { SharedeModule } from './shared/shared.module';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    SharedeModule
+    SharedeModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule
   ],
   providers: [{
     provide: RouteReuseStrategy,
