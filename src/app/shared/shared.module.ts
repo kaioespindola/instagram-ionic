@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+// Components
+import { BubbleComponent } from './components/bubble/bubble.component';
+
 @NgModule({
   imports: [
     FormsModule,
@@ -8,8 +11,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   ],
   exports: [
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BubbleComponent
   ],
-  declarations: []
+  declarations: [
+    BubbleComponent
+  ]
 })
 export class SharedeModule {}

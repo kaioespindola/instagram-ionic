@@ -23,7 +23,20 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-    <div *ngFor="let item of items">
-      {{ item.user }} | {{ item.title }}
-    </div>
+
+  <ion-grid>
+
+    <ion-row>
+
+      <ion-col>
+
+        <app-stories></app-stories>
+
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
+
 </ion-content>
