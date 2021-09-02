@@ -10,8 +10,8 @@ import { Assets } from '../../shared/constants/assets.constants';
   styleUrls: ['home.page.scss']
 })
 export class HomePage {
-
-  public assets = Assets;
+  
+  public assets: typeof Assets = Assets;
 
   constructor() {
     // this.angularFireStore.collection('posts').valueChanges().subscribe(data => {
