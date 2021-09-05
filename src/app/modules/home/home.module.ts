@@ -9,6 +9,7 @@ import { SharedeModule } from '../../shared/shared.module';
 
 // Components
 import { StoriesComponent } from './components/stories/stories.component';
+import { FeedComponent } from './components/feed/feed.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { StoriesComponent } from './components/stories/stories.component';
   ],
   declarations: [
     HomePage,
-    StoriesComponent
+    StoriesComponent,
+    FeedComponent
   ]
 })
 export class HomePageModule {}

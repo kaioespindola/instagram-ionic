@@ -1,0 +1,48 @@
+.post {
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4px 10px 4px 10px;
+
+        &__user {
+            display: flex;
+            align-items: center;
+
+            &__img {
+                width: 39px;
+                height: 39px;
+            }
+
+            p {
+                margin-left: 10px;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+
+        &__share {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__content {
+
+    }
+
+    &__intercation {
+
+    }
+
+    &__likes {
+        display: flex;
+        align-items: center;
+        margin: 5px 10px 5px 10px;
+        
+        &__names {
+            font-size: 14px;
+        }
+    }
+}

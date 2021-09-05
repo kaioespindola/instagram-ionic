@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { RouteReuseStrategy } from '@angular/router';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
@@ -15,6 +16,7 @@ import { SharedeModule } from './shared/shared.module';
   entryComponents: [],
   imports: [
     BrowserModule,
+    CommonModule,
     IonicModule.forRoot(),
     AppRoutingModule,
     SharedeModule

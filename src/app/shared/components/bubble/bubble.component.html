@@ -1,5 +1,13 @@
 <div class="bubble">
-  <div class="bubble__picture"></div>
-  <div class="bubble__plus">+</div>
-  <p>Seu story</p>
+  <div class="bubble__picture">
+    <ion-img
+      class="bubble__picture__img"
+      src="../../../../assets/profiles/1.jpg">
+    </ion-img>
+  </div>
+  <div *ngIf="isCurrentUser" class="bubble__plus">
+    <ion-icon name="add-outline"></ion-icon>
+  </div>
+  <p *ngIf="isCurrentUser">Seu story</p>
+  <p *ngIf="userName">{{ userName }}</p>
 </div>
