@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class StoriesComponent implements OnInit {
 
     slideOpts = {
-        slidesPerView: 4.7,
+        slidesPerView: 4.9,
         spaceBetween: 10,
         pagination: false,
         resistance: true,

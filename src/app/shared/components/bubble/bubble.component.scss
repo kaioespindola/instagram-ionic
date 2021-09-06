@@ -7,7 +7,6 @@
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        background: linear-gradient(0deg, rgba(233,184,67,1) 0%, rgba(227,70,200,1) 100%);
         width: 100%;
         height: 100%;
 
@@ -28,7 +27,7 @@
         position: absolute;
         right: 0;
         background-color: var(--ion-color-primary-shade);
-        border: 2.5px solid white;
+        border: 2.5px solid transparent;
         border-radius: 50%;
         color: white;
         margin-top: -30px;
@@ -36,6 +35,15 @@
 
     p {
         font-size: 13px;
+        margin-top: 5px;
         color: var(--ion-color-light-shade);
+    }
+
+    .hasStories {
+        background: linear-gradient(0deg, rgba(233,184,67,1) 0%, rgba(227,70,200,1) 100%);
+    }
+
+    .bestFriends {
+        background-color: #33e429;
     }
 }
