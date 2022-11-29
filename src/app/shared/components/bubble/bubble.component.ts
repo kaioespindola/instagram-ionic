@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class BubbleComponent {
 
-  @Input() isCurrentUser: boolean = false;
+  @Input() isCurrentUser = false;
   @Input() userName: string;
 
   constructor() { }
